@@ -1,6 +1,6 @@
 # 📺 HK IPTV Auto Updater | 香港電視台直播源自動更新
 
-![Update Status](https://github.com/sammy0101/hk-iptv-auto/actions/workflows/main.yml/badge.svg)
+![Update Status](https://github.com/291ZQL/hk-iptv-auto/actions/workflows/main.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 這是一個基於 **GitHub Actions** 的自動化 IPTV 聚合項目。
@@ -14,8 +14,8 @@
 
 | 線路 | 鏈接 (URL) | 推薦度 |
 | :--- | :--- | :--- |
-| **CDN 加速 (推薦)** | `https://raw.gh.registry.cyou/sammy0101/hk-iptv-auto/refs/heads/main/hk_live.m3u` | ⭐⭐⭐⭐⭐ |
-| **GitHub Raw** | `https://raw.githubusercontent.com/sammy0101/hk-iptv-auto/refs/heads/main/hk_live.m3u` | ⭐⭐⭐ |
+| **CDN 加速 (推薦)** | `https://raw.gh.registry.cyou/291ZQL/hk-iptv-auto/refs/heads/main/hk_live.m3u` | ⭐⭐⭐⭐⭐ |
+| **GitHub Raw** | `https://raw.githubusercontent.com/291ZQL/hk-iptv-auto/refs/heads/main/hk_live.m3u` | ⭐⭐⭐ |
 
 > ⚡ **CDN 加速服務由 [cmliussss](https://blog.cmliussss.com/) 提供，特此感謝！**
 > 
