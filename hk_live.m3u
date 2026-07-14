@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"
-# Update: 2026-07-14 03:05:47
+# Update: 2026-07-14 14:11:15
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
 http://r.jdshipin.com/qClQf
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
@@ -12,6 +12,8 @@ http://r.jdshipin.com/n90gt
 http://r.jdshipin.com/GeWKr
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠.png",翡翠
 http://php.jdshipin.com/TVOD/iptv.php?id=fct2
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/TVB翡翠台.png",TVB翡翠台
+http://cdn9.163189.xyz/smt1.1.php?id=jade_twn
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台4K.png",翡翠台4K
 http://cdn6.163189.xyz/163189/fct4k
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
@@ -78,8 +80,6 @@ http://cm61-10-2-143.hkcable.com.hk/live_freedirect/freehd209_h.live/playlist.m3
 https://epg.pm/stream/7f7227d59a7dce31cf6910bcdb4ed741f8fb5994cecb87d2bba38adf33e6c490.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/港台電視31 (官方).png",港台電視31 (官方)
 https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/RTHK TV 31 (港台電視31) (360p) [Geo-blocked].png",RTHK TV 31 (港台電視31) (360p) [Geo-blocked]
-https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/master.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/RTHK 31.png",RTHK 31
 https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/港台電視32 (官方).png",港台電視32 (官方)
@@ -164,6 +164,8 @@ http://aktv.top/AKTV/live/aktv3/null-2/AKTV.m3u8
 http://38.64.72.148/hls/modn/list/4005/chunklist1.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰香港.png",鳳凰香港
 https://cdn6.163189.xyz/live/fhhk/stream.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰香港台.png",鳳凰香港台
+https://epg.pw/stream/27b49ba568efc8dcc9af6a79ec06ffd4a2e354e3e2060143be83fca695edf46e.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰資訊.png",鳳凰資訊
 http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰資訊.png",鳳凰資訊
@@ -200,8 +202,6 @@ http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
 http://php.jdshipin.com/TVOD/iptv.php?id=xinghe
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/NOW NEWS.png",NOW NEWS
 http://cdn.163189.xyz/163189/now
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/特種兵之火鳳凰.png",特種兵之火鳳凰
-https://live.ottiptv.cc/huya/29982636
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/廣州新聞.png",廣州新聞
 http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/廣州競賽.png",廣州競賽
@@ -222,8 +222,6 @@ http://cdn2.132.us.kg/live/gdzj/stream.m3u8$LR•IPV4『线路61』
 http://61.136.172.236:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0$LR•IPV4『线路37』
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
 http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=2909&tk=a0c4f6cfaba3$LR•IPV4『线路64』
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-https://www.yangshipin.cn/tv/home?pid=600002481$LR•IPV4『线路65』
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
 http://120.76.248.139/live/bfgd/4200000100.m3u8$LR•IPV4『线路79』
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
@@ -322,6 +320,8 @@ https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a4243540d4b911f0b624bda5e9a32aa9/index.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/NowMedia Television Spanish (1080p).png",NowMedia Television Spanish (1080p)
 https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a16fa020f4c411f09ddaa1978319689a/index.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Radio Uno Tacna (720p).png",Radio Uno Tacna (720p)
+https://live-evg7.tv360.bitel.com.pe/bitel/radiounotv/playlist.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/TVB Vietnam (1080p).png",TVB Vietnam (1080p)
 https://amg01868-amg01868c3-tvbanywhere-us-4491.playouts.now.amagi.tv/playlist/amg01868-tvbusa-tvbvietnam-tvbanywhereus/playlist.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/TVBS Asia (1080p).png",TVBS Asia (1080p)
@@ -333,4 +333,4 @@ http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/CHC電影.png",CHC電影
 http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/廣東珠江.png",廣東珠江
-http://gmxw.7766.org:808/hls/83/index.m3u8
+http://183.11.239.36:808/hls/83/index.m3u8
