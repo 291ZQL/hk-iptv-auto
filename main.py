@@ -47,14 +47,14 @@ SOURCE_URLS = [
 # 2. 包含關鍵字 (必須包含這些字才抓取)
 KEYWORDS = [
     "ViuTV", "HOY", "RTHK", "Jade", "Pearl", "J2", "J5", "Now", 
-    "无线", "無線", "有线", "有線", "翡翠", "明珠", "港台", "CNA","凤凰","Macau","广东","奥视","莲花","珠江频道", "广州","韶关","深圳","央视","卫视",
+    "无线", "無線", "有线", "有線", "翡翠", "明珠",  "CNA","凤凰","Macau","广东","奥视","莲花","珠江频道", "广州","韶关","深圳",
 ]
 
 # 3. 黑名單關鍵字 (包含這些字的一律丟棄)
 BLOCK_KEYWORDS = [
     # 來自你的日誌分析 (美國/英語台)
     "FOX", "Pluto", "Local", "NBC", "CBS", "ABC", "AXS", "Snowy", 
-    "Reuters", "Mirror", "ET Now", "The Now", "Right Now", "News Now",
+    "Reuters", "Mirror", "ET Now", "The Now", "Right ", 
     "Chopper", "Wow", "UHD", "8K", "Career", "Comics", "Movies",
     "CBTV","Pearl","AccuWeather","Jadeed","Curiosity","Electric",
     "Warfare","Knowledge","MagellanTV","70s","80s","90s","Rock",
