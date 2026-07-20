@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"
-# Update: 2026-07-20 03:43:35
+# Update: 2026-07-20 14:25:15
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
 http://r.jdshipin.com/qClQf
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
@@ -12,8 +12,6 @@ http://r.jdshipin.com/n90gt
 http://r.jdshipin.com/GeWKr
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠.png",翡翠
 http://php.jdshipin.com/TVOD/iptv.php?id=fct2
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/TVB翡翠台.png",TVB翡翠台
-http://cdn9.163189.xyz/smt1.1.php?id=jade_twn
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台4K.png",翡翠台4K
 http://cdn6.163189.xyz/163189/fct4k
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
@@ -41,11 +39,15 @@ http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=0401&tk=2aca1ad9a849$LR•IPV4『线�
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/無線新聞.png",無線新聞
 http://r.jdshipin.com/CkuBd
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/無線新聞.png",無線新聞
+http://cdn9.163189.xyz/smt1.1.php?id=inews_twn
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/無線新聞.png",無線新聞
 http://php.jdshipin.com/TVOD/iptv.php?id=wxxw
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
 http://r.jdshipin.com/ZQ4kN
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
 http://r.jdshipin.com/jUx8K
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
+http://cdn9.163189.xyz/smt1.1.php?id=pearl_twn
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
 http://php.jdshipin.com/TVOD/iptv.php?id=mzt2
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
@@ -156,7 +158,7 @@ http://40.160.24.53/MSNBC/index.m3u8
 https://r.il.cdn-redge.media/livehls/oil/ch14/live/ch14/live.livx/playlist.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/NOW TV (720p).png",NOW TV (720p)
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://61.136.172.236:9901/tsfile/live/0126_1.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Radio Uno Tacna (720p).png",Radio Uno Tacna (720p)
+https://live-evg7.tv360.bitel.com.pe/bitel/radiounotv/playlist.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/廣西玉林大容山蓮花山頂.png",廣西玉林大容山蓮花山頂
 https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
