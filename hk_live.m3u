@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"
-# Update: 2026-08-22 01:34:12
+# Update: 2026-08-22 12:54:18
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
 http://r.jdshipin.com/qClQf
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
@@ -26,12 +26,6 @@ http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=j1
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/華麗翡翠台.png",華麗翡翠台
 http://php.jdshipin.com/TVOD/iptv.php?id=huali2
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://120.198.86.186:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路1】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://120.238.84.45:9901/tsfile/live/1103_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路2】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://120.198.95.220:9901/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&down=1$LR—IPV4【线路5】 【720x576@256kbps】
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/無線新聞.png",無線新聞
 http://r.jdshipin.com/CkuBd
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/無線新聞.png",無線新聞
@@ -41,9 +35,9 @@ http://r.jdshipin.com/ZQ4kN
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
 http://r.jdshipin.com/jUx8K
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
-http://php.jdshipin.com/TVOD/iptv.php?id=mzt2
+http://cdn9.163189.xyz/smt1.1.php?id=pearl_twn
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
-http://120.238.84.45:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路1】 【1920x1080@256kbps】
+http://php.jdshipin.com/TVOD/iptv.php?id=mzt2
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/有線財經信息台.png",有線財經信息台
 https://epg.pw/stream/0fddc0600d3868b05ad741d46294410aebca0fdc4fada5028dc54e624b7b17ca.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/ViuTV.png",ViuTV
@@ -72,8 +66,6 @@ http://cm61-10-2-143.hkcable.com.hk/live_freedirect/freehd209_h.live/playlist.m3
 https://epg.pm/stream/7f7227d59a7dce31cf6910bcdb4ed741f8fb5994cecb87d2bba38adf33e6c490.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/港台電視31 (官方).png",港台電視31 (官方)
 https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/RTHK TV 31 (港台電視31) (360p) [Geo-blocked].png",RTHK TV 31 (港台電視31) (360p) [Geo-blocked]
-https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/master.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/RTHK 31.png",RTHK 31
 https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/港台電視32 (官方).png",港台電視32 (官方)
@@ -96,8 +88,6 @@ https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59c
 https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/廣州綜合.png",廣州綜合
 http://r.jdshipin.com/iR6Gq
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/廣州綜合.png",廣州綜合
-http://r.jdshipin.com/snhya
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
 http://r.jdshipin.com/cCCzW
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
@@ -134,10 +124,6 @@ http://playtv-live.ifeng.com:80/live/06OLEEWQKN4.m3u8
 http://anren.live/HK/BiIOU11uLA.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
 http://playtv-live.ifeng.com:80/live/06OLEGEGM4G.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/RTHKTV31.png",RTHKTV31
-https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/CNA (Chaîne Nord Africaine) (360p).png",CNA (Chaîne Nord Africaine) (360p)
-https://live.creacast.com/cna/smil:cna.smil/playlist.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/CNA (1080p).png",CNA (1080p)
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視4K.png",深圳衛視4K
@@ -170,58 +156,10 @@ http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b56237284
 http://8.138.7.223/tv/gzjs.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/CNA.png",CNA
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/廣州綜合.png",廣州綜合
-https://tencentplaygsm.gztv.com/live/zonghes.m3u8?txTime=65797c44&amp%3BtxSecret=7e4590b2320037d7ce49ce9eac2dd6c0$LR—IPV4【线路1】 【1280x720】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://111.59.24.227:8181/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路1】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://221.232.198.40:7777/tsfile/live/1065_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路3】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://113.90.154.189:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路4】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://221.7.175.154:8445/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路5】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://123.118.53.84:45237/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路6】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://111.59.24.227:8181/tsfile/live/1030_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路9】 【720x576@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://112.27.5.218:9901/tsfile/live/0126_2.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路10】 【720x576@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://112.27.5.218:9901/tsfile/live/faacts/0126_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路12】 【1920x1080】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://113.9.214.47:9003/hls/32/index.m3u8$LR—IPV4【线路13】 【1920x1080】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://42.231.221.33:9901/tsfile/live/0126_2.m3u8?key=txiptv&playlive=0&authid=0$LR—IPV4【线路14】 【1920x1080】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=szwshd$LR—IPV4【线路19】 【1280x720】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub$LR—IPV4【线路20】 【1280x720】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://123.118.55.165:45237/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路21】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://171.38.148.188:9003/hls/33/index.m3u8$LR—IPV4【线路22】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://183.94.146.79:9901/tsfile/live/0123_2.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路23】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
-http://120.198.86.186:9901/tsfile/live/1037_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路2】 【720x576@192kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
-http://120.238.84.45:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路3】 【720x576@192kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
-http://120.198.95.220:9901/tsfile/live/1036_1.m3u8?key=txiptv&playlive=1&down=1$LR—IPV4【线路4】 【720x576@192kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰資訊.png",鳳凰資訊
-http://221.7.175.154:8445/tsfile/live/1021_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路1】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰資訊.png",鳳凰資訊
-http://120.198.95.220:9901/tsfile/live/1037_1.m3u8?key=txiptv&playlive=1&down=1$LR—IPV4【线路3】 【720x576@192kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰衛視.png",鳳凰衛視
-http://221.7.175.154:8445/tsfile/live/1020_1.m3u8?key=txiptv&playlive=1&authid=0$LR—IPV4【线路1】 【1920x1080@256kbps】
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/鳳凰衛視.png",鳳凰衛視
-http://171.38.148.188:9003/hls/110/index.m3u8$LR—IPV4【线路2】 【720x576@256kbps】
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Anthony Bourdain: Parts Unknown.png",Anthony Bourdain: Parts Unknown
 https://jmp2.uk/plu-69173ce8abd4703b27f71d44.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/CNA (1080p).png",CNA (1080p)
 https://live1.mediadesk.al/cnatvlive.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/CNA (360p) [Not 24/7].png",CNA (360p) [Not 24/7]
-https://live.creacast.com/cna/stream/playlist.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/CNA International (576p).png",CNA International (576p)
 https://mumt05.tangotv.in/87NeALx2CNA/index.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/CNA Originals (1080p).png",CNA Originals (1080p)
@@ -244,5 +182,3 @@ https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 https://live-evg7.tv360.bitel.com.pe/bitel/radiounotv/playlist.m3u8
 #EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Unknown Russia HD (1080p).png",Unknown Russia HD (1080p)
 http://185.23.80.23:8080/NeizvestnayaRossia/index.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/深圳衛視.png",深圳衛視
-http://113.57.140.161:10081/newlive/live/hls/37/live.m3u8
