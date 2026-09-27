@@ -1,10 +1,15 @@
 import requests
 import re
 import datetime
+from pathlib import Path
 from opencc import OpenCC
 
 # 初始化繁簡轉換器
 cc = OpenCC('s2t')
+
+REQUEST_TIMEOUT = 15
+CHECK_TIMEOUT = 3
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 
 # --- 設定區 ---
 
@@ -37,12 +42,12 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u",
     "https://epg.pw/test_channels_hong_kong.m3u",
     "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8",
-    "https://raw.githubusercontent.com/MercuryZz/IPTVN/refs/heads/Files/GAT.m3u"
-    "https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u"
-    "https://gh-proxy.org/https://raw.githubusercontent.com/AudiHub/iptv/main/m3u/migu.m3u"
-    "https://gh-proxy.org/https://raw.githubusercontent.com/AudiHub/iptv/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u"
-    
+    "https://raw.githubusercontent.com/MercuryZz/IPTVN/refs/heads/Files/GAT.m3u",
+    "https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u",
+    "https://gh-proxy.org/raw.githubusercontent.com/AudiHub/iptv/main/m3u/migu.m3u",
+    "https://gh-proxy.org/raw.githubusercontent.com/AudiHub/iptv/main/m3u/%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.m3u",
 ]
+
 
 # 2. 包含關鍵字 (必須包含這些字才抓取)
 KEYWORDS = [
@@ -88,11 +93,18 @@ STATIC_CHANNELS = [
 # --- 邏輯區 ---
 
 def check_url(url):
-    """檢測鏈接是否有效 (超時 2 秒)"""
+    """檢測鏈接是否有效，優先用 HEAD，失敗時 fallback 到 GET。"""
     try:
-        response = requests.get(url, timeout=2, stream=True)
-        return response.status_code == 200
-    except:
+        response = requests.head(url, timeout=CHECK_TIMEOUT, allow_redirects=True, headers={'User-Agent': USER_AGENT})
+        if response.status_code < 400:
+            return True
+    except requests.RequestException:
+        pass
+
+    try:
+        response = requests.get(url, timeout=CHECK_TIMEOUT, stream=True, headers={'User-Agent': USER_AGENT})
+        return response.status_code < 400
+    except requests.RequestException:
         return False
 
 def get_sort_key(item):
@@ -105,52 +117,50 @@ def get_sort_key(item):
 
 def fetch_and_parse():
     found_channels = []
-    
+    seen_urls = set()
+
     print("🚀 任務開始！正在抓取網路源...", flush=True)
-    
+
     for index, source in enumerate(SOURCE_URLS):
         print(f"  [{index+1}/{len(SOURCE_URLS)}] 正在讀取: {source}", flush=True)
         try:
-            r = requests.get(source, timeout=15)
+            r = requests.get(source, timeout=REQUEST_TIMEOUT, headers={'User-Agent': USER_AGENT})
             r.encoding = 'utf-8'
-            
+
             if r.status_code != 200:
                 print(f"    ⚠️ 無法讀取 (Status: {r.status_code})", flush=True)
                 continue
-            
+
             lines = r.text.split('\n')
             current_name = ""
             count_added = 0
-            
+
             for line in lines:
                 line = line.strip()
-                if not line: continue
-                
+                if not line:
+                    continue
+
                 if line.startswith("#EXTINF"):
                     match = re.search(r',(.+)$', line)
                     if match:
                         raw_name = match.group(1).strip()
-                        # 轉繁體
                         converted_name = cc.convert(raw_name)
-                        # 修正「臺」為「台」
                         current_name = converted_name.replace('臺', '台')
-                        
+
                 elif line.startswith("http") and current_name:
-                    # 1. 黑名單檢查
                     if any(b.lower() in current_name.lower() for b in BLOCK_KEYWORDS):
                         current_name = ""
                         continue
 
-                    # 2. 白名單檢查
                     if any(cc.convert(k).replace('臺', '台').lower() in current_name.lower() for k in KEYWORDS):
-                        # 去重
-                        if not any(c['url'] == line for c in found_channels):
+                        if line not in seen_urls:
                             found_channels.append({"name": current_name, "url": line})
+                            seen_urls.add(line)
                             count_added += 1
-                    current_name = "" # 重置
-            
+                    current_name = ""
+
             print(f"    ✅ 抓取成功，新增 {count_added} 個頻道", flush=True)
-            
+
         except Exception as e:
             print(f"    ❌ 抓取錯誤: {e}", flush=True)
 
@@ -166,12 +176,19 @@ def generate_m3u(channels):
     for static in STATIC_CHANNELS:
         final_list.append(static)
         
+    seen_final_urls = set()
+
     # 2. 檢測網路源
     for i, ch in enumerate(channels):
         print(f"[{i+1}/{total}] 檢測: {ch['name']} ...", end=" ", flush=True)
-        
+
+        if ch['url'] in seen_final_urls:
+            print("⏭️ 重複", flush=True)
+            continue
+
         if check_url(ch['url']):
             final_list.append(ch)
+            seen_final_urls.add(ch['url'])
             print("🟢 有效", flush=True)
         else:
             print("🔴 失效", flush=True)
@@ -183,14 +200,13 @@ def generate_m3u(channels):
     # 4. 寫入文件
     content = '#EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"\n'
     content += f'# Update: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n'
-    
+
     for item in final_list:
         final_name = item["name"].replace('臺', '台')
         content += f'#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/{final_name}.png",{final_name}\n'
         content += f'{item["url"]}\n'
 
-    with open("hk_live.m3u", "w", encoding="utf-8") as f:
-        f.write(content)
+    Path("hk_live.m3u").write_text(content, encoding="utf-8")
 
     print(f"\n🎉 全部完成！共收錄 {len(final_list)} 個有效頻道。", flush=True)
 
